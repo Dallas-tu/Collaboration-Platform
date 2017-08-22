@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src='js/bootstrap.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        #Mbtn div {
+            height: 4px;
+            background-color: black;
+            margin: 5px 0;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        #Mbtn {
+            width: 30px;
+            display: block;
+        }
+
+        #Mbtn:hover div {
+            width: 30px;
+        }
+
+        #one {
+            width: 30px;
+        }
+
+        #two {
+            width: 20px;
+        }
+
+        #three {
+            width: 25px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#col1").resizable();
+
+            
+
+        })
+
+    </script>
+
+</head>
+
+<body style="overflow:hidden">
+    <div class="container" style="min-width:100%">
+
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                   Collaborative PlatForm
+                </a>
+
+                <a class="navbar-toggle" id="Mbtn" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <div class="icon-bar" id="one"></div>
+                    <div class="icon-bar" id="two"></div>
+                    <div class="icon-bar" id="three"></div>
+                </a>
+
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">HOME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="row1">
+            <div class="col-lg-9" style="height:100%;max-width:75%" id="col0">
+                <div class="row">
+                    <div class="col-lg-12" id="col1" style="background:orange;min-height:337.5px;max-height:500px"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="col2" style="background:orangered;height:337.5px"></div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="height:675px">
+                <div class="row">
+                    <div class="col-lg-12" id="col3" style="background:green;height:337.5px"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="col4" style="background:skyblue;height:337.5px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
